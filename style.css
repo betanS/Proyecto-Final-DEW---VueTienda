@@ -1,28 +1,27 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  display: grid;
 }
 
 /* Style the header */
 .navBar {
   background-color: aqua;
   padding: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 35px;
 }
 
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+.navBar button {
+  background-color: rgb(187, 255, 244);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /* Style the footer */
@@ -30,33 +29,14 @@ body {
   background-color: #f1f1f1;
   padding: 10px;
   text-align: center;
+  margin-top: 20px;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-/*
 .carousel {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
-  width: 100%;
   display: block;
-}*/
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  list-style-type: decimal;
+  padding: auto;
+}
